@@ -1,4 +1,4 @@
-#Exploring of Cairo 1.
+# Exploring of Cairo 1.
 
 Here are some simple examples to show you how Cairo 1 works. As I continue to develop Cairo 1, I will add more examples.
 To run the examples, use the following command:
