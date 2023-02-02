@@ -1,4 +1,4 @@
-# Exploring of Cairo 1.
+# Exploring of Cairo 1
 
 Here are some simple examples to show you how Cairo 1 works. As I continue to develop Cairo 1, I will add more examples.
 To run the examples, use the following command:
@@ -13,13 +13,15 @@ cargo run --bin cairo-run -- -p ./src/var/var_1.cairo
 ```
 
 Note: The Cairo 1 version is still in alpha, so it's very likely that the syntax will change.
+
 The base template is from the people at Extropy. You can see it [here](https://github.com/ExtropyIO/cairo-1-template).
+
 To make these examples, I based them on the repositories.
 * [Cairo Examples](https://github.com/starkware-libs/cairo/tree/main/examples)
 * [Quaireaux](https://github.com/keep-starknet-strange/quaireaux)
 
 ### Contents
-- Variables
+- [Variables]()
     - [Let](#let)
     - [Mut](#mut)
     - [Ref](#ref)
@@ -40,10 +42,10 @@ To make these examples, I based them on the repositories.
 - [Enumerations](#enum)
 - [Match Expressions](#match)
 
-## Variable
+## Variables
 
 <a id="let"></a>
-#### Let
+### Let
 Declaring a Variable. Once a value is assigned, it cannot be changed. It becomes a constant.
 ```rust
 fn main() -> felt {
@@ -53,7 +55,7 @@ fn main() -> felt {
 ```
 
 <a id="mut"></a>
-#### Mut
+### Mut
 Declaring a Mutable Variable. Otherwise, the value cannot be modified again.
 ```rust
 fn main() -> felt {
@@ -63,7 +65,7 @@ fn main() -> felt {
 }
 ```
 <a id="ref"></a>
-#### Ref
+### Ref
 Modifying a Variable That is Passed as a Reference.
 ```rust
 fn main() -> felt {
@@ -77,7 +79,7 @@ fn b(ref n: felt){
 }
 ```
 <a id="constant"></a>
-#### Constant
+### Constant
 Declaring global constant.
 ```rust
 const NUM: felt = 15;
@@ -87,7 +89,7 @@ fn main() -> felt {
 ```
 
 <a id="bool"></a>
-#### Bool
+### Bool
 ```rust
 fn main() -> bool {
     let a = 25;
@@ -103,7 +105,7 @@ fn main() -> bool {
 ## Debugging
 
 <a id="print-felt"></a>
-#### Print felt
+### Print felt
 ```rust
 fn main() -> felt {
     let a = 15;
@@ -117,7 +119,7 @@ fn main() -> felt {
 ## Conditional Statements
 
 <a id="operator"></a>
-#### Equality Operator (==)
+### Equality Operator (==)
 ```rust
 fn main() {
     let x = 25;
@@ -132,7 +134,7 @@ fn main() {
 ```
 
 <a id="operators"></a>
-#### Comparison Operators (< > <= >=)
+### Comparison Operators (< > <= >=)
 ```rust
 fn main() {
     let x = 10;
@@ -152,7 +154,7 @@ fn main() {
 }
 ```
 <a id="and"></a>
-#### AND Operator
+### AND Operator
 ```rust
 fn main() {
     let x = 25;
@@ -167,7 +169,7 @@ fn main() {
 ```
 
 <a id="or"></a>
-#### OR Operator
+### OR Operator
 ```rust
 fn main() {
     let x = 0;
@@ -183,7 +185,7 @@ fn main() {
 }
 ```
 <a id="negation"></a>
-#### Negation Operator (!)
+### Negation Operator (!)
 A function can be called in the conditional if
 ```rust
 fn main() {
@@ -204,7 +206,7 @@ fn is_greater(age: felt) -> bool {
 ## Arrays
 
 <a id="new"></a>
-#### Creating, Appending, and Accessing Elements
+### Creating, Appending, and Accessing Elements
 ```rust
 use array::ArrayTrait;
 
@@ -218,7 +220,7 @@ fn main() {
 }
 ```
 <a id="len"></a>
-#### Length (len)
+### Length (len)
 ```rust
 use array::ArrayTrait;
 
@@ -232,7 +234,7 @@ fn main() -> usize {
 ```
 
 <a id="pop"></a>
-#### Pop Front
+### Pop Front
 ```rust
 use array::ArrayTrait;
 
